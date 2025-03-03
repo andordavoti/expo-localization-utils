@@ -1,6 +1,6 @@
 {
   "name": "@davotisolutions/expo-localization-utils",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "description": "Expo Localization Utils",
   "main": "build/index.js",
