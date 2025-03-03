@@ -27,6 +27,7 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
+      "expo-localization",
       [
         "../app.plugin.js",
         {
