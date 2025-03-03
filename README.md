@@ -49,7 +49,14 @@ In the app.json or app.config.js file, add the supported locales to the `expo.an
 {
   "expo": {
     ... // other configuration
-    "plugins": [["@davotisolutions/expo-localization-utils", { "locales": ["en", "nb"] }]]
+    "plugins": [
+      [
+        "../app.plugin.js",
+        {
+          "locales": ["en", "nb"]
+        }
+      ]
+    ]
   }
 }
 ```

@@ -26,6 +26,13 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [["../app.plugin.js", { "locales": ["en", "nb"] }]]
+    "plugins": [
+      [
+        "../app.plugin.js",
+        {
+          "locales": ["en", "nb"]
+        }
+      ]
+    ]
   }
 }
