@@ -1,14 +1,8 @@
-import { registerWebModule, NativeModule } from 'expo';
+import { registerWebModule, NativeModule } from "expo";
 
-import { ExpoLocalizationUtilsModuleEvents } from './ExpoLocalizationUtils.types';
-
-class ExpoLocalizationUtilsModule extends NativeModule<ExpoLocalizationUtilsModuleEvents> {
-  PI = Math.PI;
-  async setValueAsync(value: string): Promise<void> {
-    this.emit('onChange', { value });
-  }
-  hello() {
-    return 'Hello world! 👋';
+class ExpoLocalizationUtilsModule extends NativeModule {
+  openNativeAppLanguageSettings() {
+    // TODO: Implement this method
   }
 }
 
