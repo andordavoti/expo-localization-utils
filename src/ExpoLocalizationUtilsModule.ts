@@ -6,5 +6,5 @@ declare class ExpoLocalizationUtilsModule extends NativeModule {
 
 // This call loads the native module object from the JSI.
 export default requireNativeModule<ExpoLocalizationUtilsModule>(
-  "ExpoLocalizationUtils"
+  "ExpoLocalizationUtils",
 );
