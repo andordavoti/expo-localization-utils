@@ -43,7 +43,7 @@ On iOS, it will open the native settings for your app, as there is no way to ope
 
 ### Android
 
-In the app.json or app.config.js file, add the supported locales to the `expo.android` object:
+In the app.json or app.config.js file, add the supported locales to the plugin:
 
 ```json
 {
@@ -51,7 +51,7 @@ In the app.json or app.config.js file, add the supported locales to the `expo.an
     ... // other configuration
     "plugins": [
       [
-        "../app.plugin.js",
+        "@davotisolutions/expo-localization-utils",
         {
           "locales": ["en", "nb"]
         }
@@ -65,7 +65,7 @@ The `locales` array should contain the locales that the app supports. The locale
 
 ### iOS
 
-This library isn't needed for adding supported locales to iOS projects, as this can added directly in the Info.plist file. Like this:
+This library isn't needed for adding supported locales to iOS projects, as this can added directly to the expo.ios.infoPlist in the app.json or app.config.js file:
 
 ```json
 {
