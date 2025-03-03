@@ -14,7 +14,10 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "expo.modules.localizationutils.example"
+      "bundleIdentifier": "expo.modules.localizationutils.example",
+      "infoPlist": {
+        "CFBundleLocalizations": ["no", "en"]
+      }
     },
     "android": {
       "adaptiveIcon": {

@@ -1,40 +1,35 @@
 import ExpoLocalizationUtils from "expo-localization-utils";
-import { Button, SafeAreaView } from "react-native";
+import { useTranslation } from "react-i18next";
+import { Button, Text, View } from "react-native";
+
+import { useSelectedLanguage } from "./localization/utils";
+import "./localization/i18n";
 
 export default function App() {
+  useSelectedLanguage();
+  const { t } = useTranslation();
   return (
-    <SafeAreaView style={styles.container}>
+    <View
+      style={{
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Text
+        style={{
+          fontSize: 24,
+          marginBottom: 16,
+        }}
+      >
+        {t("title", { ns: "home" })}
+      </Text>
       <Button
-        title="Set value"
+        title={t("changeLanguage", { ns: "common" })}
         onPress={() => {
           ExpoLocalizationUtils.openNativeAppLanguageSettings();
         }}
       />
-    </SafeAreaView>
+    </View>
   );
 }
-
-const styles = {
-  header: {
-    fontSize: 30,
-    margin: 20,
-  },
-  groupHeader: {
-    fontSize: 20,
-    marginBottom: 20,
-  },
-  group: {
-    margin: 20,
-    backgroundColor: "#fff",
-    borderRadius: 10,
-    padding: 20,
-  },
-  container: {
-    flex: 1,
-    backgroundColor: "#eee",
-  },
-  view: {
-    flex: 1,
-    height: 200,
-  },
-};

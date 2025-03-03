@@ -12,7 +12,7 @@ public class ExpoLocalizationUtilsModule: Module {
 
     // Defines a JavaScript synchronous function that runs the native code on the JavaScript thread.
     Function("openNativeAppLanguageSettings") {
-      return "Hello world! 👋"
+        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
     }
   }
 }

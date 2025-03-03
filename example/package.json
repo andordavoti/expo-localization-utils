@@ -6,7 +6,8 @@
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "localization:types": "i18next-resources-for-ts interface -i ./localization/locales/nb -o ./localization/resources-nb.d.ts && i18next-resources-for-ts interface -i ./localization/locales/en -o ./localization/resources-en.d.ts"
   },
   "dependencies": {
     "expo": "~52.0.35",

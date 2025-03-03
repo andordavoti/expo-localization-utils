@@ -75,15 +75,21 @@ This library isn't needed for adding supported locales to iOS projects, as this 
       ... // other configuration
       "infoPlist": {
         "CFBundleLocalizations": ["no", "en"]
-    }
+      }
     },
   }
 }
 ```
 
+## Example
+
+There is an example project in the `example` directory, which is a Expo project that demonstrates how to use the library. As well as providing a proposal for how to structure your project to support localization with Expo Localization with i18next.
+
+You can read more about the example project in the [README](example/README.md).
+
 ## Contributing
 
-Contributions are very welcome! Please refer to guidelines described in the [contributing guide](https://github.com/expo/expo#contributing).
+Contributions are very welcome! Submit a pull request on the GitHub repository to propose changes.
 
 ## License
 
